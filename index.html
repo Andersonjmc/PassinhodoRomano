@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passinho do Romano</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dinamica.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <!--Título-->
+        <h1>Passinho do Romano</h1>
+        <!-- Caixa de Texto -->
+        <textarea id="caixaVazia1" rows="4" cols="30" placeholder="Digite aqui sua mensagem..."></textarea>
+
+        <!-- Cifra de Cesar ou Base 64 -->
+        <p>Faça sua Escolha:</p>
+        <div>
+            <input type="radio" id="cesar" name="codigo" value="César">
+            <label for="César">César</label>
+            </input>
+
+            <input type="radio" id="base64" name="codigo" value="Base64">
+            <label for="Base64">Base 64</label>
+            </input>
+        </div>
+
+        <!-- Incremento código de César -->
+        <div id="incremento">
+            <input type="text" id="increment" value="1"></input>
+        </div>
+
+        <!-- Seleção de itens -->
+        <p>Faça sua marcação:</p>
+        <div>
+            <input type="radio" id="cod" name="procedimento" onclick="mudaBotao()" value="Codificar"><label
+                for="cod">Codificar</label><br>
+            <input type="radio" id="deco" name="procedimento" onclick="mudaBotao()" value="Decodificar">
+            <label for="deco">Decodificar</label>
+        </div>
+        <p><button id="botao">Codificar Mensagem</button></p>
+
+        <!-- Caixa de Texto 2 -->
+        <strong> Caixa de Resposta: </strong>
+        <textarea class="caixaVazia2" name="message" rows="4" cols="30"
+            placeholder="Digite aqui sua mensagem..."></textarea>
+    </div>
+
+</body>
+
+</html>

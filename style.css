@@ -1,0 +1,76 @@
+ body {
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/21/16/55/network-3418742_960_720.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* alinhar Itens */
+    background-size: cover; /* Usar toda a imagem na tela */
+    }
+    @font-face {
+        font-family: 'Personalizada';
+        src: url('Belladonia.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+ /* Tipos de Formatos()
+        - opentype(otf)
+        - truetype(ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        */
+
+    h1 {
+       font-family: 'Personalizada', Arial, Helvetica, sans-serif;
+       color: rgba(62, 62, 66, 0.61);
+      }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgba(255, 255, 255, 0.507);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* uma unidade de medida responsiva */
+    background: rgba(0, 0, 0, 0.767);
+    font-size: 20px;
+    color: rgb(67, 70, 102);
+        }
+
+#increment {
+    background-color: #261a1a;
+    color: white;
+    height: 20px;
+    width: 100px;
+}
+
+#incremento {
+    display: none;
+    color: black;   
+}
+
+#botao {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #3c2626;
+    color: white;
+    border: 2px solid #261a1a;
+}
+
+#botao:hover {
+    background-color: transparent;
+    color: #1A2326;
+    border: 2px solid #1A2326;
+}
+
+textarea {
+    color: white;
+    width: 200px;
+    background-color: #261a1a;
+    border-radius: 10px;
+}
